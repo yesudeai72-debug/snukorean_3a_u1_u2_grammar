@@ -17,7 +17,7 @@
 </main>
 <script type="module">
 import{initializeApp}from"https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
-import{getFirestore,collection,addDoc,serverTimestamp}from"https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import{getFirestore,doc,setDoc,serverTimestamp}from"https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 const firebaseConfig={apiKey:"AIzaSyDhggUZfNi6POHz1qdfLoilKfEaqgWhdyo",authDomain:"learning-korean-with-ai.firebaseapp.com",projectId:"learning-korean-with-ai",storageBucket:"learning-korean-with-ai.appspot.com",messagingSenderId:"910630520783",appId:"1:910630520783:web:0cf02dbeadff7ae46be48e"};
 const db=getFirestore(initializeApp(firebaseConfig)),collectionName="snukorean_3a_u1_u2_grammar";
 const practices=[
